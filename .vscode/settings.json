@@ -1,0 +1,47 @@
+{
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/*.pyc": {
+      "when": "$(basename).py"
+    },
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.history": true,
+    "**/.pytest_cache": true,
+    "**/.svn": true,
+    "**/.venv": true,
+    "**/.vscode": true,
+    "**/CVS": true,
+    "**/__pycache__": true
+  },
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
+  "python.formatting.provider": "black",
+  "python.linting.pylintEnabled": false,
+  "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+  "python.sortImports.args": ["-rc", "--atomic"],
+  "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
+  "python.terminal.activateEnvironment": true,
+  "python.unitTest.nosetestsEnabled": false,
+  "python.unitTest.pyTestEnabled": true,
+  "python.unitTest.unittestEnabled": false,
+  "terminal.explorerKind": "integrated",
+  "terminal.integrated.env.linux": {
+    "PIPENV_VENV_IN_PROJECT": "1",
+    "PIPENV_VERBOSITY": "-1"
+  },
+  "terminal.integrated.env.osx": {
+    "PIPENV_VENV_IN_PROJECT": "1",
+    "PIPENV_VERBOSITY": "-1"
+  },
+  "terminal.integrated.env.windows": {
+    "PIPENV_VENV_IN_PROJECT": "1",
+    "PIPENV_VERBOSITY": "-1"
+  }
+}

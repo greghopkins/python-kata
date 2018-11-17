@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+black = "==18.9b0"
+isort = "*"
+pylint = "*"
+pytest-factoryboy = "*"
+seed-isort-config = "*"
+freezegun = "*"
+pytest-mock = "*"
+mock = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
