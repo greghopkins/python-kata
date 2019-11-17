@@ -6,9 +6,7 @@
   },
   "editor.formatOnSave": true,
   "files.exclude": {
-    "**/*.pyc": {
-      "when": "$(basename).py"
-    },
+    "**/__pycache__": true,
     "**/.DS_Store": true,
     "**/.git": true,
     "**/.hg": true,
@@ -17,8 +15,10 @@
     "**/.svn": true,
     "**/.venv": true,
     "**/.vscode": true,
-    "**/CVS": true,
-    "**/__pycache__": true
+    "**/*.pyc": {
+      "when": "$(basename).py"
+    },
+    "**/CVS": true
   },
   "python.envFile": "${workspaceFolder}/.env",
   "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
@@ -28,9 +28,10 @@
   "python.sortImports.args": ["-rc", "--atomic"],
   "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
   "python.terminal.activateEnvironment": true,
-  "python.unitTest.nosetestsEnabled": false,
-  "python.unitTest.pyTestEnabled": true,
-  "python.unitTest.unittestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.pytestArgs": ["."],
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
   "terminal.explorerKind": "integrated",
   "terminal.integrated.env.linux": {
     "PIPENV_VENV_IN_PROJECT": "1",
